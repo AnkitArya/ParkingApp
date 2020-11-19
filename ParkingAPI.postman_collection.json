@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "88b8a1bd-19fc-441f-a924-cc71e8448e02",
+		"name": "ParkingAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Parking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"TestParking\",\r\n    \"Code\":\"TestCode\",\r\n    \"Slots\":10,\r\n    \"Price\":20,\r\n    \"Minutes\":60,\r\n    \"CreatorId\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/parking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"parking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vehicle Parking API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"Verna\",\r\n    \"Code\":\"HR01AB9090\",\r\n    \"ParkingSlotId\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/parked-vehicle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"parked-vehicle"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,35 @@
+{
+  "development": {
+    "username": "sa",
+    "password": "bD4LT50e0s",
+    "database": "ParkingDb",
+    "host": "127.0.0.1",
+    "dialect": "mssql",
+    "define": {
+      "freezeTableName": true,
+      "timestamps": false
+    }
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "define": {
+      "freezeTableName": true,
+      "timestamps": false
+    }
+  },
+  "production": {
+    "username": "sa",
+    "password": "bD4LT50e0s",
+    "database": "ParkingDb",
+    "host": "127.0.0.1",
+    "dialect": "mssql",
+    "define": {
+      "freezeTableName": true,
+      "timestamps": false
+    }
+  }
+}
